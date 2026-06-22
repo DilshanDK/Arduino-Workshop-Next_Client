@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  arduino-workshop:
+    image: ghcr.io/dilshandk/arduino-workshop:latest
+    container_name: arduino-workshop
+    restart: always
+    ports:
+      - "3030:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
