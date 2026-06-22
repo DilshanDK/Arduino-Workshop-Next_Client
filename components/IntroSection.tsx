@@ -132,10 +132,8 @@ export default function IntroSection() {
 
         {/* What is Innovior strip */}
         <div
-          className="intro-reveal"
+          className="intro-reveal grid cols-3"
           style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3,1fr)',
             gap: '20px',
           }}
         >

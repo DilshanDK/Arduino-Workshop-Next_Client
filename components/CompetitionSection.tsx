@@ -129,11 +129,11 @@ export default function CompetitionSection() {
         </div>
 
         {/* Take-home */}
-        <div className="comp-reveal" style={{
+        <div className="comp-reveal grid cols-2" style={{
           marginTop: '60px', padding: '40px 48px',
           background: 'linear-gradient(135deg, rgba(94,234,212,0.06), rgba(201,130,74,0.06))',
           border: '1px solid var(--solder-edge)', borderRadius: '20px',
-          display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px',
+          gap: '40px',
         }}>
           <div>
             <div className="eyebrow" style={{ marginBottom: '14px' }}>What you take home</div>

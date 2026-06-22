@@ -28,7 +28,7 @@ export default function SparkSection() {
         <div className="eyebrow spark-reveal" style={{ textTransform: 'uppercase' }}>— 01 · Spark</div>
         <h2 className="section-title spark-reveal" style={{ marginBottom: '40px' }}>What is Arduino, really?</h2>
         
-        <div className="spark-reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', marginBottom: '60px', alignItems: 'center' }}>
+        <div className="spark-reveal grid cols-2" style={{ gap: '60px', marginBottom: '60px', alignItems: 'center' }}>
           <div>
             <p style={{ color: 'var(--muted)', fontSize: '18px', lineHeight: '1.8', margin: 0 }}>
               An Arduino is a tiny, programmable computer brain — small enough to fit inside a toy car, cheap enough to break without panic, and simple enough to learn in an afternoon. You write instructions on your laptop, upload them over USB, and the board carries them out forever, even after you unplug your computer.
@@ -39,7 +39,7 @@ export default function SparkSection() {
           </div>
         </div>
 
-        <div className="spark-reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px', marginBottom: '40px' }}>
+        <div className="spark-reveal grid cols-2" style={{ gap: '30px', marginBottom: '40px' }}>
           <div style={{ border: '1px dashed var(--solder-edge)', padding: '40px', borderRadius: '16px' }}>
             <h3 style={{ color: 'var(--cream)', marginBottom: '16px', fontSize: '18px', fontWeight: 600 }}>Microprocessor (your laptop)</h3>
             <p style={{ color: 'var(--muted)', fontSize: '15px', lineHeight: '1.7', margin: 0 }}>
@@ -54,7 +54,7 @@ export default function SparkSection() {
           </div>
         </div>
 
-        <div className="spark-reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }}>
+        <div className="spark-reveal grid cols-3" style={{ gap: '20px' }}>
           <div className="card">
             <h4 style={{ color: 'var(--copper-bright)', marginBottom: '10px', fontSize: '18px' }}>Arduino Uno</h4>
             <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.6' }}>
