@@ -64,7 +64,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           port: 22
           source: "docker-compose.yml"
-          target: "~/arduino-workshop/"
+          target: "/home/ubuntu/Projects/arduino-workshop/"
 
       # SSH to the VPS and run docker compose
       - name: Deploy to VPS via SSH
@@ -81,8 +81,8 @@ jobs:
               echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
             fi
             
-            mkdir -p ~/arduino-workshop
-            cd ~/arduino-workshop
+            mkdir -p /home/ubuntu/Projects/arduino-workshop
+            cd /home/ubuntu/Projects/arduino-workshop
             
             # Dynamically replace the image name in the copied docker-compose.yml to match the built image name
             sed -i "s|image:.*|image: ${{ env.IMAGE_NAME }}:latest|g" docker-compose.yml
